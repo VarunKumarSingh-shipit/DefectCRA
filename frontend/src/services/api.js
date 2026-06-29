@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const API_BASE = import.meta.env.VITE_API_URL || '';
+
 const api = axios.create({
-  baseURL: ''
+  baseURL: API_BASE
 });
 
 export const uploadFile = async (file) => {
@@ -33,7 +35,7 @@ export const exportWord = async (params) => {
 // Streams the 5-Why chain via SSE.
 // onEvent receives { type, payload } where type in: 'why' | 'summary' | 'error' | 'done'
 export const generateFiveWhyChain = async (params, onEvent, signal) => {
-  const response = await fetch('/api/five-why-chain', {
+  const response = await fetch(`${API_BASE}/api/five-why-chain`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(params),
