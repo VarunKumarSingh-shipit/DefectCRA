@@ -1,0 +1,8 @@
+/* Shares .chart-container, .chart-title, .chart-wrapper, .custom-tooltip from TrendChart.css */
+@import './TrendChart.css';
+
+/* Pareto specific additions if needed */
+.chart-wrapper {
+  /* Ensure overflow is visible for the angled X-axis labels */
+  overflow: visible;
+}

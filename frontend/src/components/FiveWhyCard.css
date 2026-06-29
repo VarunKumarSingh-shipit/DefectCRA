@@ -1,0 +1,150 @@
+.five-why-card {
+  margin-bottom: 2rem;
+  border-left-width: 4px;
+  border-left-style: solid;
+}
+
+.fw-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fw-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fw-title h2 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.rank-badge {
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.fw-stats {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.stat-pill {
+  background: var(--surface-elevated);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid var(--border-color);
+}
+
+.stat-pill.primary {
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--primary-light);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.fw-body {
+  padding: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.required {
+  color: var(--error);
+}
+
+.read-only-text {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1rem;
+  border-radius: 6px;
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.highlight-input {
+  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(18, 18, 42, 0.8);
+}
+
+.action-row.left {
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.mt-4 { margin-top: 2rem; }
+
+.spinner.small {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+
+/* Results section */
+.fw-results {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.results-title {
+  font-size: 1.1rem;
+  color: var(--primary-light);
+  margin-bottom: 1.5rem;
+}
+
+.why-step {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.why-indicator {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  margin-top: 30px;
+}
+
+.why-content {
+  flex: 1;
+}
+
+.root-cause-group {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(239, 68, 68, 0.05);
+  border-radius: 8px;
+  border-left: 4px solid var(--error);
+}
+
+.root-cause-input {
+  font-weight: 500;
+  color: #fca5a5;
+  border-color: rgba(239, 68, 68, 0.2);
+}

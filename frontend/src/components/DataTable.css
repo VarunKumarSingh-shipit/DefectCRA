@@ -1,0 +1,82 @@
+.data-table-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.table-header-info h3 {
+  color: var(--primary-light);
+  font-size: 1.2rem;
+}
+
+.row-count {
+  background: rgba(99, 102, 241, 0.15);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.table-wrapper {
+  max-height: 400px;
+  overflow: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+th {
+  background: var(--surface-elevated);
+  color: var(--text-primary);
+  padding: 1rem;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  z-index: 10;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+  border-bottom: 2px solid var(--border-color);
+}
+
+th:hover {
+  background: rgba(99, 102, 241, 0.2);
+}
+
+td {
+  padding: 0.8rem 1rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+tr:hover td {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--text-primary);
+}
+
+.sort-indicator {
+  color: var(--accent);
+  margin-left: 4px;
+}
